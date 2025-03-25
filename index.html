@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>欢迎来到我的网站！</title>
+    <title>跨介质流体动力学实验室</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .lab-title {
             text-align: center;
-            padding: 50px;
-        }
-        .welcome {
+            font-size: 1.8rem;
             color: #2c3e50;
-            font-size: 2.5em;
+            margin-bottom: 1rem;
         }
-        .emoji {
-            font-size: 3em;
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #34495e;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* 图片展示区域 */
+        .banner {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 基础样式 */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
-    <div class="emoji">🎉</div>
-    <h1 class="welcome">Hello World！</h1>
-    <p>这是我的第一个 GitHub Pages 网站</p>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <h1 class="lab-title">跨介质流体动力学实验室</h1>
+        <ul class="nav-links">
+            <li><a href="#home">主页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#people">人员</a></li>
+            <li><a href="#publications">出版物</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <!-- 图片展示 -->
+    <div class="banner">
+        <img src="xt.jpg" alt="实验室环境展示图">
+    </div>
+
+    <!-- 后续可以在这里添加其他内容 -->
 </body>
 </html>
